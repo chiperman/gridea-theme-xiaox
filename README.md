@@ -1,7 +1,7 @@
-# Chiperman's personal Blog
+# gridea-theme-pan-xiaox
 
-这是我从大学开始写的[博客](chiperman.design)
+这是我的博客使用的主题 [Pan](https://github.com/alterfang/gridea-theme-pan) 的魔改版
 
-记录了我学习、生活、随笔等等一切的记录
+调整了一些我自己需要的配色、展示效果等等
 
-欢迎访问我的博客并且留言
+可以去我的[博客](chiperman.design)查看效果！
