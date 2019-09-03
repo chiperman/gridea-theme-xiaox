@@ -391,8 +391,8 @@ mark {
 }
 
 .view-img {
-  background: #fff;
-  background: rgba(255, 255, 255, .92);
+  background: #fff !important;
+  background: rgba(255, 255, 255, .92) !important;
 }
 
 .tagcloud a,
