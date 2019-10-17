@@ -450,3 +450,8 @@ blockquote cite {
 .song tt {
   background-color: #2F2F2F;
 }
+
+ul.links li a {
+  background-color: #333333;
+  border: 1px solid #999999;
+}
