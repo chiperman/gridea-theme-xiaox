@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./_blocks/head', { siteTitle: themeConfig.siteName }) %>
+    <script src="/media/gridea-search/fuse.js"></script>
+    <script src="/media/gridea-search/ejs.min.js"></script>
+    <script src="/media/gridea-search/gridea-search.js"></script>
+    <script src="/media/gridea-search/result-template.ejs" type="text/ejs"></script>
+    <style>
+        .searching {
+            text-align: center;
+            padding: 55px 38%;
+            font-size: 15px;
+        }
+
+        .no-result {
+            text-align: center;
+            padding: 55px 38%;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <style>
+        .searched-keyword {
+            background-color: yellow;
+        }
+    </style>
+    <div id="wrapper">
+        <%- include('./_blocks/header') %>
+        <div id="gridea-search-result">
+            <p class="searching">搜索中......</p>
+            <p class="no-result" style="display:none">未搜索到相关文章</p>
+        </div>
+    </div>
+    <%- include('./_blocks/footer') %>
+    <%- include('./_blocks/footjs') %>
+</body>
+
+</html>

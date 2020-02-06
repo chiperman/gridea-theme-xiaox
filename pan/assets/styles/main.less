@@ -93,7 +93,7 @@ a:active {
 /*--- 头部 ---*/
 header {
     text-align: center;
-    padding: 120px 0px 40px 0px;
+    padding: 128px 0px 80px 0px;
     background: #515865 center no-repeat;
     font-size: 16px;
     color: #fff;
@@ -1318,4 +1318,68 @@ ul.links li:hover .bg {
     height: 100%;
     left: 0;
     top: 0;
+}
+
+// 搜索插件 css
+
+.search-box {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px;
+}
+
+.search-box:hover>.search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+
+@media screen and (max-width: 960px) {
+    .search-box:hover>.search-txt {
+        width: 147px;
+        padding: 0 6px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .search-box:hover>.search-txt {
+        width: 240px;
+        padding: 0 6px;
+    }
+}
+
+
+.search-box:hover>.search-btn {
+    background: white;
+}
+
+.search-btn {
+    color: #EA4C89;
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 30px;
+    width: 0px;
 }

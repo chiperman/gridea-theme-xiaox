@@ -1,10 +1,10 @@
-		<header id="header" class="site-header" >
+		<header id="header" class="site-header">
 			<div class="site-branding">
-									<h1 class="site-title"><a href="<%= themeConfig.domain %>" rel="home"><%= themeConfig.siteName %></a></h1>
-										
-					<h2 class="site-description"><%- themeConfig.siteDescription %></h2>
-										
-							</div>
+				<h1 class="site-title"><a href="<%= themeConfig.domain %>" rel="home"><%= themeConfig.siteName %></a></h1>
+
+				<h2 class="site-description"><%- themeConfig.siteDescription %></h2>
+
+			</div>
 			<nav id="nav-wrapper">
 				<div class="container">
 					<div class="nav-toggle">
@@ -16,24 +16,43 @@
 					</div>
 					<div class="clear"></div>
 					<ul class="dove">
-		 <% menus.forEach(function(menu) { %>
-     			
-<li>
-	 
-	<a  href="<%= menu.link %>"> <%= menu.name %></a></li>
-	
-    <% }); %>
+						<% menus.forEach(function(menu) { %>
 
-</ul>
-</li>		
-		
-</ul>				</div>
+						<li>
+
+							<a href="<%= menu.link %>"> <%= menu.name %></a></li>
+
+						<% }); %>
+
+					</ul>
+					</li>
+
+					</ul>
+				</div>
 			</nav>
 
-<div class="jingge">
-<% ['rss', 'twitter', 'github', 'zhihu', 'facebook','linkedin','telegram','douban','instagram','qq','weibo','youtube'].forEach((item) => { %>
-<% if (site.customConfig[item]) { %>			
-<a  href="<%= site.customConfig[item] %>" target="_blank" ><i class="iconfont icon-<%= item %>"></i></a>
- <% } %>
-    <% }) %>
-        </header>
+			<div class="jingge">
+				<% ['rss', 'twitter', 'github', 'zhihu', 'facebook','linkedin','telegram','douban','instagram','qq','weibo','youtube'].forEach((item) => { %>
+				<% if (site.customConfig[item]) { %>
+				<a href="<%= site.customConfig[item] %>" target="_blank"><i class="iconfont icon-<%= item %>"></i></a>
+				<% } %>
+				<% }) %>
+			</div>
+			<form id="gridea-search-form" data-update="<%=site.utils.now%>" action="/search/index.html">
+				<div class="search-box">
+					<input class="search-txt" name="q" placeholder="Type to search" />
+					<a class="search-btn">
+						<i class="fas fa-search" action="/search/index.html" onClick=submitSearchForm()></i>
+					</a>
+				</div>
+			</form>
+		</header>
+
+		<!-- <script>
+			function submitSearchForm() {
+				var form = document.getElementById("gridea-search-form");
+				form.submit();
+			}
+		</script> -->
+
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
