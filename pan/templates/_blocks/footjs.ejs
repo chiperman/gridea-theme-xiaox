@@ -1,11 +1,19 @@
 <script src="https://cdn.bootcss.com/fitvids/1.2.0/jquery.fitvids.min.js"></script>
 <script type='text/javascript' src='<%= themeConfig.domain %>/media/scripts/marlin-scripts.js'></script>
- <script src="//tokinx.github.io/lately/lately.min.js"></script>
-  <script>jQuery(document).ready(function(){$.lately({'target':'.lately-a,.lately-b,.lately-c'})});</script>
-  <style type="text/css">a.back_to_top {
+<script src="//tokinx.github.io/lately/lately.min.js"></script>
+<script>
+  jQuery(document).ready(function () {
+    $.lately({
+      'target': '.lately-a,.lately-b,.lately-c'
+    })
+  });
+</script>
+<style type="text/css">
+  /* 一键到顶部 */
+  a.back_to_top {
     text-decoration: none;
     position: fixed;
-    bottom: 40px;
+    bottom: 65px;
     right: 30px;
     background: #f0f0f0;
     height: 40px;
@@ -17,54 +25,162 @@
     transition-duration: .5s;
     transition-propety: background-color;
     display: none;
-}
+  }
 
-a.back_to_top span {
+  a.back_to_top span {
     color: #888;
-}
+  }
 
-a.back_to_top:hover {
+  a.back_to_top:hover {
     cursor: pointer;
     background: #dfdfdf;
-}
+  }
 
-a.back_to_top:hover span {
+  a.back_to_top:hover span {
     color: #555;
-}
+  }
 
-@media print, screen and (max-width: 580px) {
+  @media print,
+  screen and (max-width: 580px) {
     .back_to_top {
-        display: none !important;
+      display: none !important;
     }
-}
+  }
+
+  /* 一键到底部 */
+
+  a.down_to_bottom {
+    text-decoration: none;
+    position: fixed;
+    bottom: 15px;
+    right: 30px;
+    background: #f0f0f0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 36px;
+    font-size: 18px;
+    text-align: center;
+    transition-duration: .5s;
+    transition-propety: background-color;
+    display: none;
+  }
+
+  a.down_to_bottom span {
+    color: #888;
+  }
+
+  a.down_to_bottom:hover {
+    cursor: pointer;
+    background: #dfdfdf;
+  }
+
+  a.down_to_bottom:hover span {
+    color: #555;
+  }
+
+  @media print,
+  screen and (max-width: 580px) {
+    .down_to_bottom {
+      display: none !important;
+    }
+  }
+</style>
 
 
-
-</style><a id="back_to_top" href="#" class="back_to_top"><span><i class="iconfont icon-xiangshang"></i></span>
+<a id="back_to_top" href="#" class="back_to_top"><span><i class="iconfont icon-xiangshang"></i></span>
 </a>
 
+<a id="down_to_bottom" href="#" class="down_to_bottom"><span><i class="iconfont icon-xiangxia"></i></span>
+</a>
 
-<script>$(document).ready((function(_this) {
-  return function() {
-    var bt;
-    bt = $('#back_to_top');
-    if ($(document).width() > 480) {
-      $(window).scroll(function() {
-        var st;
-        st = $(window).scrollTop();
-        if (st > 30) {
-          return bt.css('display', 'block');
-        } else {
-          return bt.css('display', 'none');
-        }
-      });
-      return bt.click(function() {
-        $('body,html').animate({
-          scrollTop: 0
-        }, 800);
-        return false;
-      });
+<script src="//instant.page/3.0.0" type="module" defer
+  integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+
+<script>
+  function getScrollTop() {
+    var scrollTop = 0,
+      bodyScrollTop = 0,
+      documentScrollTop = 0;
+    if (document.body) {
+      bodyScrollTop = document.body.scrollTop;
     }
+    if (document.documentElement) {
+      documentScrollTop = document.documentElement.scrollTop;
+    }
+    scrollTop = (bodyScrollTop - documentScrollTop > 0) ? bodyScrollTop : documentScrollTop;
+    return scrollTop;
   };
-})(this));
+
+  function getScrollHeight() {
+    var scrollHeight = 0,
+      bodyScrollHeight = 0,
+      documentScrollHeight = 0;
+    if (document.body) {
+      bSH = document.body.scrollHeight;
+    }
+    if (document.documentElement) {
+      dSH = document.documentElement.scrollHeight;
+    }
+    scrollHeight = (bSH - dSH > 0) ? bSH : dSH;
+    return scrollHeight;
+  };
+
+  function getWindowHeight() {
+    var windowHeight = 0;
+    if (document.compatMode == "CSS1Compat") {
+      windowHeight = document.documentElement.clientHeight;
+    } else {
+      windowHeight = document.body.clientHeight;
+    }
+    return windowHeight;
+  };
+
+  $(document).ready((function (_this) {
+    return function () {
+      var bt;
+      bt = $('#back_to_top');
+      if ($(document).width() > 480) {
+        $(window).scroll(function () {
+          var st;
+          st = $(window).scrollTop();
+          if (st > 30) {
+            return bt.css('display', 'block');
+          } else {
+            return bt.css('display', 'none');
+          }
+        });
+        return bt.click(function () {
+          $('body,html').animate({
+            scrollTop: 0
+          }, 800);
+          return false;
+        });
+      }
+    };
+  })(this));
+
+  $(document).ready((function (_this) {
+    return function () {
+      var bt;
+      bt = $('#down_to_bottom');
+      if ($(document).width() > 480) {
+        $(window).scroll(function () {
+          var st;
+          st = $(window).scrollTop();
+          if (getScrollTop() + getWindowHeight() == getScrollHeight()) {
+            return bt.css('display', 'none');
+          } else {
+            return bt.css('display', 'block');
+          }
+        });
+        return bt.click(function () {
+          $('body,html').animate({
+            scrollTop: $('body,html')[0].scrollHeight
+          }, 800);
+          return false;
+        });
+      }
+    };
+  })(this));
 </script>

@@ -2,10 +2,12 @@
 			style="background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(<%= post.feature %>)"
 			<% } %>>
 			<div class="site-branding">
-				<h1 class="site-title"><a href="<%= themeConfig.domain %>" rel="home"><%= themeConfig.siteName %></a></h1>
-
+				<h1 class="site-title">
+					<div class="post-title-name">
+						<a href="<%= themeConfig.domain %>" rel="home"><%= post.title %></a>
+					</div>
+				</h1>
 				<h2 class="site-description"><%- themeConfig.siteDescription %></h2>
-
 			</div>
 			<nav id="nav-wrapper">
 				<div class="container">
@@ -32,10 +34,20 @@
 					</ul>
 				</div>
 			</nav>
+
 			<div class="jingge">
 				<% ['rss', 'twitter', 'github', 'zhihu', 'facebook','linkedin','telegram','douban','instagram','qq','weibo','youtube'].forEach((item) => { %>
 				<% if (site.customConfig[item]) { %>
 				<a href="<%= site.customConfig[item] %>" target="_blank"><i class="iconfont icon-<%= item %>"></i></a>
 				<% } %>
 				<% }) %>
+			</div>
+			<form id="gridea-search-form" data-update="<%=site.utils.now%>" action="/search/index.html">
+				<div class="search-box">
+					<input class="search-txt" name="q" placeholder="Type to search" />
+					<a class="search-btn">
+						<i class="iconfont icon-search1" action="/search/index.html"></i>
+					</a>
+				</div>
+			</form>
 		</header>

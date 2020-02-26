@@ -1,18 +1,15 @@
-
-
-
 <div class="tocc col l3 hide-on-med-and-down">
-	
-        <div class="toc-widget">
-			
-            <div class="toc-title"></div>
-			
-            <div id="toc-content">
-			
-			
-			</div>
+
+    <div class="toc-widget">
+
+        <div class="toc-title"></div>
+
+        <div id="toc-content">
+
+
         </div>
     </div>
+</div>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.5.0/tocbot.min.js"></script>
@@ -51,5 +48,21 @@
                 $tocWidget.removeClass('toc-fixed');
             }
         });
+    });
+
+    $(function () {
+        var bt;
+        bt = $('.toc-widget');
+        if ($(document).width() > 480) {
+            $(window).scroll(function () {
+                var st;
+                st = $(window).scrollTop();
+                if (st > 450) {
+                    return bt.css('display', 'block');
+                } else {
+                    return bt.css('display', 'none');
+                }
+            })
+        }
     });
 </script>

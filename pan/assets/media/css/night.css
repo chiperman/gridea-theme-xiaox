@@ -94,6 +94,13 @@ article .entry-title>a,
 
 }
 
+#content article .entry-info>span::before {
+  content: "/ ";
+  font-size: 16px;
+  margin: 0 4px;
+  color: #bcbcbc;
+}
+
 .mark,
 mark {
   padding: .2em;
@@ -412,7 +419,7 @@ blockquote {
   font-style: italic;
   background: #333;
   color: #bcbcbc;
-  border-left: 4px solid #7AC088;
+  border-left: 4px solid #EA4C89;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -423,7 +430,7 @@ blockquote:before {
   left: 15px;
   content: "\e63c";
   font-family: "iconfont" !important;
-  color: #7AC088;
+  color: #EA4C89;
   font-size: 30px;
   line-height: 1;
 

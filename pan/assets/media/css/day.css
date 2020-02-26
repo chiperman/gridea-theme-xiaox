@@ -13,10 +13,7 @@ article .entry-title>a,
 
 }
 
-article a:hover,
-.entry-meta a {
-  color: #337ab7;
-}
+
 
 #content article .entry-summary {
   color: #555;
@@ -86,7 +83,7 @@ article a:hover,
 }
 
 .hentry h1 a::before {
-  background-color: #337ab7;
+  background-color: #EA4C89;
 
 }
 
@@ -406,7 +403,7 @@ blockquote {
   box-sizing: border-box;
   background: #f5f5f5;
   color: #777777;
-  border-left: 4px solid #ae81ff;
+  border-left: 4px solid #EA4C89;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14);
 }
 
@@ -417,7 +414,7 @@ blockquote:before {
   left: 15px;
   content: "\e63c";
   font-family: "iconfont" !important;
-  color: #ae81ff;
+  color: #EA4C89;
   font-size: 30px;
   line-height: 1;
 

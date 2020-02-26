@@ -14,13 +14,15 @@
 					<article id="post-70"
 						class="post-70 post type-post status-publish format-standard hentry category-5 tag-10 tag-9 tag-11">
 						<div class="entry-content">
-							<h1 class="wow swing entry-title"><%= post.title %></h1>
 							<div class="entry-meta">
-								<div class="wow bounce">
-									<i class="iconfont icon-rili"> <time class="lately-a" datetime="<%= post.date %>"
-											itemprop="datePublished" pubdate=""><%= post.dateFormat %></time></i>
+								<div class="entry-info">
+									<time>
+										<%= post.dateFormat %>
+									</time>
+									<span>
+										<%= post.stats.text %>
+									</span>
 								</div>
-								</span>
 							</div>
 							<div class="wow slideInLeft entry-summary song">
 								<%- post.content %>
