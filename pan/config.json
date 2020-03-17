@@ -194,7 +194,38 @@
       "value": "",
       "type": "input",
       "note": "UA-xxxxxxxxx-x"
+    },
+    {
+      "name": "jsdelivr",
+      "label": "jsDelivr 加速",
+      "group": "jsDelivr 加速配置",
+      "value": "false",
+      "type": "select",
+      "options": [{
+          "label": "开启",
+          "value": true
+        },
+        {
+          "label": "关闭",
+          "value": false
+        }
+      ]
+    },
+    {
+      "name": "username",
+      "label": "Github 用户名",
+      "group": "jsDelivr 加速配置",
+      "value": "",
+      "type": "input",
+      "note": "请输入 Github 用户名"
+    },
+    {
+      "name": "repository",
+      "label": "Github 仓库名",
+      "group": "jsDelivr 加速配置",
+      "value": "",
+      "type": "input",
+      "note": "请输入 Github 仓库名"
     }
-
   ]
 }

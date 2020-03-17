@@ -1,5 +1,11 @@
 <script src="https://cdn.bootcss.com/fitvids/1.2.0/jquery.fitvids.min.js"></script>
-<script type='text/javascript' src='<%= themeConfig.domain %>/media/scripts/marlin-scripts.js'></script>
+<% if ( site.customConfig.jsdelivr == true) { %>
+<script
+  src="https://cdn.jsdelivr.net/gh/<%= site.customConfig.username %>/<%= site.customConfig.repository %>/media/scripts/marlin-scripts.js">
+</script>
+<% } else{ %>
+<script src="<%= themeConfig.domain %>/media/scripts/marlin-scripts.js"></script>
+<% }; %>
 <script src="//tokinx.github.io/lately/lately.min.js"></script>
 <script>
   jQuery(document).ready(function () {

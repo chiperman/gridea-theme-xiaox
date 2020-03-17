@@ -333,18 +333,16 @@ table {
     padding: 1px 2px;
     font-family: Menlo, Monaco, Consolas, Courier New, monospace;
     word-wrap: break-word;
+    white-space: pre;
+    overflow: auto;
+    border-radius: 5px;
 }
 
 @media (prefers-color-scheme: dark) {
 
     .song code,
     .song tt {
-        color: #888888;
         background-color: #2F2F2F;
-        font-size: 0.96em;
-        padding: 1px 2px;
-        font-family: Menlo, Monaco, Consolas, Courier New, monospace;
-        word-wrap: break-word;
     }
 }
 
@@ -412,6 +410,7 @@ article .entry-title>a,
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+    background-color:#337AB7;
 }
 
 #content article .entry-summary {
@@ -484,7 +483,7 @@ article .entry-title>a,
 }
 
 #content article .link-more:hover {
-    color: #EA4C89;
+    color: #337AB7;
 }
 
 
@@ -1781,6 +1780,10 @@ blockquote cite {
     body {
         background-color: #333333;
         color: #bcbcbc;
+    }
+
+    h1.entry-title a:hover{
+        color: #337AB7;
     }
 
     article .entry-title>a,
