@@ -1,0 +1,233 @@
+{
+  "name": "webstack",
+  "version": "0.0.2",
+  "author": "Linmumu",
+  "repository": "https://github.com/lmm214/gridea-theme-webstack",
+  "customConfig": [
+    {
+      "name": "fun1",
+      "label": "信息资讯",
+      "group": "信息资讯",
+      "type": "array",
+      "value": [],
+      "arrayItems": [
+        { "label": "名称", "name": "siteName", "type": "input", "value": "" },
+        { "label": "链接", "name": "siteLink", "type": "input", "value": "" },
+        { "label": "Logo", "name": "siteLogo", "type": "input", "value": "" },
+        { "label": "描述", "name": "description", "type": "input", "value": "" }
+      ],
+      "note": ""
+    },
+    {
+      "name": "fun2",
+      "label": "代码社区",
+      "group": "代码社区",
+      "type": "array",
+      "value": [],
+      "arrayItems": [
+        { "label": "名称", "name": "siteName", "type": "input", "value": "" },
+        { "label": "链接", "name": "siteLink", "type": "input", "value": "" },
+        { "label": "Logo", "name": "siteLogo", "type": "input", "value": "" },
+        { "label": "描述", "name": "description", "type": "input", "value": "" }
+      ],
+      "note": ""
+    },
+    {
+      "name": "fun3",
+      "label": "教程资料",
+      "group": "教程资料",
+      "type": "array",
+      "value": [],
+      "arrayItems": [
+        { "label": "名称", "name": "siteName", "type": "input", "value": "" },
+        { "label": "链接", "name": "siteLink", "type": "input", "value": "" },
+        { "label": "Logo", "name": "siteLogo", "type": "input", "value": "" },
+        { "label": "描述", "name": "description", "type": "input", "value": "" }
+      ],
+      "note": ""
+    },
+    {
+      "name": "fun4",
+      "label": "设计社区",
+      "group": "设计社区",
+      "type": "array",
+      "value": [],
+      "arrayItems": [
+        { "label": "名称", "name": "siteName", "type": "input", "value": "" },
+        { "label": "链接", "name": "siteLink", "type": "input", "value": "" },
+        { "label": "Logo", "name": "siteLogo", "type": "input", "value": "" },
+        { "label": "描述", "name": "description", "type": "input", "value": "" }
+      ],
+      "note": ""
+    },
+    {
+      "name": "fun5",
+      "label": "截图神器",
+      "group": "截图神器",
+      "type": "array",
+      "value": [],
+      "arrayItems": [
+        { "label": "名称", "name": "siteName", "type": "input", "value": "" },
+        { "label": "链接", "name": "siteLink", "type": "input", "value": "" },
+        { "label": "Logo", "name": "siteLogo", "type": "input", "value": "" },
+        { "label": "描述", "name": "description", "type": "input", "value": "" }
+      ],
+      "note": ""
+    },
+    {
+      "name": "fun6",
+      "label": "趣味网站",
+      "group": "趣味网站",
+      "type": "array",
+      "value": [],
+      "arrayItems": [
+        { "label": "名称", "name": "siteName", "type": "input", "value": "" },
+        { "label": "链接", "name": "siteLink", "type": "input", "value": "" },
+        { "label": "Logo", "name": "siteLogo", "type": "input", "value": "" },
+        { "label": "描述", "name": "description", "type": "input", "value": "" }
+      ],
+      "note": ""
+    },
+    {
+      "name": "fun7",
+      "label": "照片图库",
+      "group": "照片图库",
+      "type": "array",
+      "value": [],
+      "arrayItems": [
+        { "label": "名称", "name": "siteName", "type": "input", "value": "" },
+        { "label": "链接", "name": "siteLink", "type": "input", "value": "" },
+        { "label": "Logo", "name": "siteLogo", "type": "input", "value": "" },
+        { "label": "描述", "name": "description", "type": "input", "value": "" }
+      ],
+      "note": ""
+    },
+    {
+      "name": "fun8",
+      "label": "色彩分类",
+      "group": "色彩分类",
+      "type": "array",
+      "value": [],
+      "arrayItems": [
+        { "label": "名称", "name": "siteName", "type": "input", "value": "" },
+        { "label": "链接", "name": "siteLink", "type": "input", "value": "" },
+        { "label": "Logo", "name": "siteLogo", "type": "input", "value": "" },
+        { "label": "描述", "name": "description", "type": "input", "value": "" }
+      ],
+      "note": ""
+    },
+    {
+      "name": "fun9",
+      "label": "Mockup",
+      "group": "Mockup",
+      "type": "array",
+      "value": [],
+      "arrayItems": [
+        { "label": "名称", "name": "siteName", "type": "input", "value": "" },
+        { "label": "链接", "name": "siteLink", "type": "input", "value": "" },
+        { "label": "Logo", "name": "siteLogo", "type": "input", "value": "" },
+        { "label": "描述", "name": "description", "type": "input", "value": "" }
+      ],
+      "note": ""
+    },
+    {
+      "name": "fun10",
+      "label": "图标素材",
+      "group": "图标素材",
+      "type": "array",
+      "value": [],
+      "arrayItems": [
+        { "label": "名称", "name": "siteName", "type": "input", "value": "" },
+        { "label": "链接", "name": "siteLink", "type": "input", "value": "" },
+        { "label": "Logo", "name": "siteLogo", "type": "input", "value": "" },
+        { "label": "描述", "name": "description", "type": "input", "value": "" }
+      ],
+      "note": ""
+    },
+    {
+      "name": "fun11",
+      "label": "设计网站",
+      "group": "设计网站",
+      "type": "array",
+      "value": [],
+      "arrayItems": [
+        { "label": "名称", "name": "siteName", "type": "input", "value": "" },
+        { "label": "链接", "name": "siteLink", "type": "input", "value": "" },
+        { "label": "Logo", "name": "siteLogo", "type": "input", "value": "" },
+        { "label": "描述", "name": "description", "type": "input", "value": "" }
+      ],
+      "note": ""
+    },
+    {
+      "name": "fun12",
+      "label": "字体素材",
+      "group": "字体素材",
+      "type": "array",
+      "value": [],
+      "arrayItems": [
+        { "label": "名称", "name": "siteName", "type": "input", "value": "" },
+        { "label": "链接", "name": "siteLink", "type": "input", "value": "" },
+        { "label": "Logo", "name": "siteLogo", "type": "input", "value": "" },
+        { "label": "描述", "name": "description", "type": "input", "value": "" }
+      ],
+      "note": ""
+    },
+    {
+      "name": "fun13",
+      "label": "模型素材",
+      "group": "模型素材",
+      "type": "array",
+      "value": [],
+      "arrayItems": [
+        { "label": "名称", "name": "siteName", "type": "input", "value": "" },
+        { "label": "链接", "name": "siteLink", "type": "input", "value": "" },
+        { "label": "Logo", "name": "siteLogo", "type": "input", "value": "" },
+        { "label": "描述", "name": "description", "type": "input", "value": "" }
+      ],
+      "note": ""
+    },
+    {
+      "name": "fun14",
+      "label": "音乐歌曲",
+      "group": "音乐歌曲",
+      "type": "array",
+      "value": [],
+      "arrayItems": [
+        { "label": "名称", "name": "siteName", "type": "input", "value": "" },
+        { "label": "链接", "name": "siteLink", "type": "input", "value": "" },
+        { "label": "Logo", "name": "siteLogo", "type": "input", "value": "" },
+        { "label": "描述", "name": "description", "type": "input", "value": "" }
+      ],
+      "note": ""
+    },
+    {
+      "name": "fun15",
+      "label": "个人站点",
+      "group": "个人站点",
+      "type": "array",
+      "value": [],
+      "arrayItems": [
+        { "label": "名称", "name": "siteName", "type": "input", "value": "" },
+        { "label": "链接", "name": "siteLink", "type": "input", "value": "" },
+        { "label": "Logo", "name": "siteLogo", "type": "input", "value": "" },
+        { "label": "描述", "name": "description", "type": "input", "value": "" }
+      ],
+      "note": ""
+    },
+    {
+      "name": "fun16",
+      "label": "游戏专区",
+      "group": "游戏专区",
+      "type": "array",
+      "value": [],
+      "arrayItems": [
+        { "label": "名称", "name": "siteName", "type": "input", "value": "" },
+        { "label": "链接", "name": "siteLink", "type": "input", "value": "" },
+        { "label": "Logo", "name": "siteLogo", "type": "input", "value": "" },
+        { "label": "描述", "name": "description", "type": "input", "value": "" }
+      ],
+      "note": ""
+    }
+
+  ]
+}

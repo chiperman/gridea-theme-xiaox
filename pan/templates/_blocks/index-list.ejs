@@ -1,32 +1,41 @@
 <% posts.forEach(function(post) { %>
-	<article
-		class="wow zoomInDown post post-index  post-318 type-post status-publish format-standard hentry category-uncategorized tag-40 tag-39">
-		<% if (themeConfig.showFeatureImage && post.feature) { %>
-		<a href="<%= post.link %>">
-			<div class="posttou" style="background-image:url(<%= post.feature %>)"></div>
-		</a>
-		<% } %>
-		<div class="entry-content">
-			<h1 class="entry-title"><a href="<%= post.link %>" rel="bookmark"><%= post.title %></a></h1>
-			<div class="entry-meta">
-				<time>
-					<%= post.dateFormat %>
-				</time>
-				<span>
-					<%= post.stats.text %>
-				</span>
-				<% post.tags.forEach(function(tag) { %>
-				<a href="<%= tag.link %>" class="post-tag">
-					# <%= tag.name %>
-				</a>
-				<% }); %>
-			</div>
-			<div class="entry-summary jia">
-				<%- post.abstract %>
-				<p class="readmore">
-					<a href="<%= post.link %>" class="link-more">Read more</a>
-				</p>
-			</div>
+<article
+	class="wow zoomIn post post-index  post-318 type-post status-publish format-standard hentry category-uncategorized tag-40 tag-39">
+	<% if (themeConfig.showFeatureImage && post.feature) { %>
+	<a href="<%= post.link %>">
+		<div class="posttou" style="background-image:url(<%= post.feature %>)"></div>
+	</a>
+	<% } %>
+	<div class="entry-content">
+		<h1 class="entry-title"><a href="<%= post.link %>" rel="bookmark"><%= post.title %></a></h1>
+		<div class="entry-meta">
+			<time>
+				<%= post.dateFormat %>
+			</time>
+			<span>
+				<%= post.stats.text %>
+			</span>
+			<script type="text/javascript">
+				var isTop;
+				isTop = <%= post.isTop %>;
+				if (isTop == true) {
+				  document.write("<span>⭐ Top</span>");
+				}
+
+			  </script>
+			<br>
+			<% post.tags.forEach(function(tag) { %>
+			<a href="<%= tag.link %>" class="post-tag">
+				# <%= tag.name %>
+			</a>
+			<% }); %>
 		</div>
-	</article>
-	<% }); %>
+		<div class="entry-summary jia">
+			<%- post.abstract %>
+			<p class="readmore">
+				<a href="<%= post.link %>" class="link-more">Read more</a>
+			</p>
+		</div>
+	</div>
+</article>
+<% }); %>

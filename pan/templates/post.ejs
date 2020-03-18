@@ -22,12 +22,16 @@
 									<span>
 										<%= post.stats.text %>
 									</span>
+									<!-- id 将作为查询条件 -->
+									<span id="/post/<%= post.fileName %>/" class="leancloud_visitors"  data-flag-title="<%= post.title %>">
+										<span class="leancloud-visitors-count"></span>次阅读
+									</span>
 								</div>
 							</div>
-							<div class="wow slideInLeft entry-summary song">
+							<div class="wow zoomIn entry-summary song">
 								<%- post.content %>
 							</div>
-							<div class="wow bounceInDown vt-post-tags">
+							<div class="wow zoomIn vt-post-tags">
 								<% post.tags.forEach(function(tag) { %>
 								<a href="<%= tag.link %>" rel="tag"><%= tag.name %></a>
 								<% }); %>
@@ -36,16 +40,16 @@
 
 								<div class="nav-links3">
 									<% if (post.prevPost && !post.hideInList) { %>
-									<div class="wow bounceInLeft nav-previous3"><a href="<%= post.prevPost.link %>"
+									<div class="wow zoomIn nav-previous3"><a href="<%= post.prevPost.link %>"
 											rel="prev"> <%= post.prevPost.title %></a></div>
 									<% } %>
 									<% if (post.nextPost && !post.hideInList) { %>
-									<div class="wow bounceInRight nav-next3"><a href="<%= post.nextPost.link %>"
+									<div class="wow zoomIn nav-next3"><a href="<%= post.nextPost.link %>"
 											rel="next"> <%= post.nextPost.title %></a></div>
 									<% } %>
 								</div>
 							</nav>
-							<div class="wow rollIn author-info" style="visibility: visible; animation-name: rollIn;">
+							<div class="wow zoomIn author-info" style="visibility: visible; animation-name: zoomIn;">
 								<div class="author-avatar pull-left"><img
 										src="<%= themeConfig.domain %>/images/avatar.png"></div>
 								<% if (site.customConfig.gxmz) { %>
@@ -61,7 +65,7 @@
 							<% } %>
 						</div>
 					</article>
-					<div id="marlin_lite_about_widget-2" class="wow bounceInUp widget marlin_lite_about_widget"
+					<div id="marlin_lite_about_widget-2" class="wow zoomIn widget marlin_lite_about_widget"
 						data-wow-delay="0.1s">
 
 						<% if (typeof commentSetting !== 'undefined' && commentSetting.showComment) { %>
