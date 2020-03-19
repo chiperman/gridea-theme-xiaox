@@ -28,22 +28,6 @@
       "note": "请输入个性签名"
     },
     {
-      "name": "haks",
-      "label": "自动关闭黑暗模式时间",
-      "group": "黑暗模式",
-      "value": "",
-      "type": "input",
-      "note": "请输入24时"
-    },
-    {
-      "name": "hajs",
-      "label": "自动开启黑暗模式时间",
-      "group": "黑暗模式",
-      "value": "",
-      "type": "input",
-      "note": "请输入24时"
-    },
-    {
       "name": "valine",
       "label": "是否需要Valine评论",
       "group": "评论板块",
@@ -226,6 +210,23 @@
       "value": "",
       "type": "input",
       "note": "请输入 Github 仓库名"
+    },
+    {
+      "name": "buildTimeLaunch",
+      "label": "是否需要开启博客建站时间",
+      "group": "建站时间",
+      "value": true,
+      "type": "switch",
+      "note": "开启则在 footer.js 中运行博客建立时间插件"
+    },
+    {
+      "name": "buildtime",
+      "label": "博客建立时间",
+      "group": "建站时间",
+      "value": "05/07/2019",
+      "type": "input",
+      "note": "请输入博客建立的时间，格式为「月份/日期/年份」"
     }
   ]
 }
+

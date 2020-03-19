@@ -6,14 +6,16 @@
 			<br>
 			<b>Eleven forever.</b>
 			<br>
-			「我」已经运行了<script type="text/javascript">
-				var urodz = new Date("05/07/2019");
-				var now = new Date();
-				var ile = now.getTime() - urodz.getTime();
-				var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
-				document.write(+dni)
-			</script>天
-			<br>
+			<span class="runtime">
+				「我」已经运行了<script type="text/javascript">
+					var urodz = new Date("<%= site.customConfig.buildtime %>");
+					var now = new Date();
+					var ile = now.getTime() - urodz.getTime();
+					var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
+					document.write(+dni)
+				</script>天
+				<br>
+			</span>
 			<b>Theme: </b>
 			<a href="https://github.com/chiperman/gridea-theme-xiaox" target="_blank" title="Pan">
 				<span><b>Pan - XiaoX</b></span>

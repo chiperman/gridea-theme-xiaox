@@ -16,8 +16,13 @@ const generateOverride = (params = {}) => {
       }
     `
   }
-
-
+  if (typeof params.buildTimeLaunch !== 'undefined' && !params.buildTimeLaunch) {
+    result += `
+    .runtime {
+        display: none;
+      }
+    `
+  }
   console.log('result', result)
 
   return result
