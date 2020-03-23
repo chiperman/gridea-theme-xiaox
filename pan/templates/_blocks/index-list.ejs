@@ -15,13 +15,15 @@
 			<span>
 				<%= post.stats.text %>
 			</span>
-			<script type="text/javascript">
-				var isTop;
-				isTop = <%= post.isTop %>;
-				if (isTop == true) {
-				  document.write("<span>⭐ Top</span>");
-				}
-			  </script>
+			<span class="isTop">
+				<script type="text/javascript">
+					var isTop;
+					isTop = <%= post.isTop %>;
+					if (isTop == true) {
+					  document.write("<span>⭐ Top</span>");
+					}
+				  </script>
+			</span>
 			<br>
 			<% post.tags.forEach(function(tag) { %>
 			<a href="<%= tag.link %>" class="post-tag">

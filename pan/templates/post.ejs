@@ -26,6 +26,16 @@
 									<span id="/<%= post.fileName %>/" class="leancloud_visitors"  data-flag-title="<%= post.title %>">
 										<span class="leancloud-visitors-count"></span>次阅读
 									</span>
+									<span class="isTop">
+										<script type="text/javascript">
+											var isTop;
+											isTop = <%= post.isTop %>;
+											if (isTop == true) {
+												// document.write("<i class="iconfont icon-icon-test"></i>")
+												document.write("<span>⭐ Top</span>");
+											}
+										  </script>
+									</span>
 								</div>
 							</div>
 							<div class="wow zoomIn entry-summary song">

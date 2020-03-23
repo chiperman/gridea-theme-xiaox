@@ -107,13 +107,10 @@ header {
     background-size: cover;
 }
 
-header a {}
-
 .site-header h1 {
     font-family: Dancing Script, sans-serif;
     font-size: 60px;
 }
-
 
 .post-title-name {
     width: fit-content;
@@ -127,8 +124,6 @@ header a {}
     margin-left: auto;
     margin-right: auto;
 }
-
-
 
 .site-title {
     font-weight: 300;
@@ -338,14 +333,6 @@ pre {
     font-family: Menlo, Monaco, Consolas, Courier New, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-
-    .song code,
-    .song tt {
-        background-color: #2F2F2F;
-    }
-}
-
 // 文章
 #content article {
     margin: 50px 0 0 0;
@@ -414,7 +401,7 @@ article .entry-title>a,
 }
 
 #content article .entry-summary {
-    color: #555;
+    color: #373737;
     letter-spacing: 0.5px;
     line-height: 30px;
     margin: 30px 0;
@@ -452,14 +439,11 @@ article .entry-title>a,
     font-size: 13px;
 }
 
-
-
 #content article .entry-meta>span::before {
     content: "/ ";
     font-size: 16px;
     margin: 0 4px;
 }
-
 
 .entry-meta .post-tag {
     margin: 0px 4px;
@@ -485,7 +469,6 @@ article .entry-title>a,
 #content article .link-more:hover {
     color: #337AB7;
 }
-
 
 @-webkit-keyframes load {
 
@@ -534,7 +517,6 @@ article .entry-title>a,
     -o-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease;
 }
-
 
 .posttou {
     display: block;
@@ -613,7 +595,6 @@ article .entry-title>a,
 .author-link {
     color: #333;
 }
-
 
 .author-avatar {
     margin-right: 15px;
@@ -743,12 +724,9 @@ article .entry-title>a,
     margin-top: 3.75rem
 }
 
-
 #archives #archives-tags h3 {
     color: #333
 }
-
-
 
 #archives #archives-tags a {
     position: relative;
@@ -794,7 +772,6 @@ body.ipad #archives-tags .itags {
     font-weight: 300;
     font-size: 2.625rem
 }
-
 
 .bmdb-title {
     color: #333;
@@ -973,7 +950,6 @@ ul.links li:hover .bg {
 .page #respond {
     padding: 0 30px 30px;
 }
-
 
 // 豆瓣页面
 .douban {
@@ -1286,6 +1262,8 @@ ul.links li:hover .bg {
 }
 
 @media(min-width:768px) and (max-width:991px) {
+
+
     .site-header h1 {
         // font-size: 75px;
     }
@@ -1307,6 +1285,8 @@ ul.links li:hover .bg {
 
 @media (min-width: 768px) {
 
+
+
     #nav-wrapper .dove .menu-item-has-children:hover>.sub-menu {
         visibility: visible;
         opacity: 1;
@@ -1317,6 +1297,7 @@ ul.links li:hover .bg {
 }
 
 @media (max-width: 767px) {
+
 
     .topbar .pull-left,
     .social.pull-right {
@@ -1503,19 +1484,6 @@ ul.links li:hover .bg {
         // font-size: 70px;
     }
 
-    .post-title-name {
-        width: fit-content;
-        padding: 24px;
-        background: rgba(0, 0, 0, 0.1);
-        font-size: 20px;
-        font-weight: 900;
-        letter-spacing: 0.08em;
-        line-height: 1.1;
-        backdrop-filter: blur(10px);
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     .site-description {
         font-size: 14px;
     }
@@ -1557,6 +1525,8 @@ ul.links li:hover .bg {
 }
 
 @media (min-width:991px) {
+
+
     pre code::-webkit-scrollbar {
         height: 6px;
     }
@@ -1617,8 +1587,8 @@ ul.links li:hover .bg {
     padding: 0 6px;
 }
 
-
 @media screen and (max-width: 960px) {
+
     .search-box:hover>.search-txt {
         width: 147px;
         padding: 0 6px;
@@ -1626,6 +1596,7 @@ ul.links li:hover .bg {
 }
 
 @media screen and (min-width: 960px) {
+
     .search-box:hover>.search-txt {
         width: 240px;
         padding: 0 6px;
@@ -1725,7 +1696,6 @@ ul.links li:hover .bg {
     width: 0px;
 }
 
-
 .hljs-bullet,
 .hljs-blockquote,
 .hljs-horizontal_rule,
@@ -1749,7 +1719,6 @@ blockquote:before {
     line-height: 1;
 }
 
-
 blockquote {
     position: relative;
     padding: 10px 15px 10px 60px;
@@ -1759,7 +1728,6 @@ blockquote {
     border-left: 4px solid #EA4C89;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14);
 }
-
 
 blockquote p {
     padding: 0;
@@ -1773,7 +1741,6 @@ blockquote cite {
     color: #888888;
     font-size: 0.9em;
 }
-
 
 // 暗黑模式
 
@@ -1800,7 +1767,7 @@ blockquote cite {
     }
 
     #content article .entry-summary {
-        color: #bcbcbc;
+        color: #D4D4D4;
         letter-spacing: 0.5px;
         line-height: 30px;
         margin: 30px 0;
@@ -1879,7 +1846,6 @@ blockquote cite {
         color: #bcbcbc;
     }
 
-
     .page-header {
         background: #333 none repeat scroll 0 0;
         border: 1px solid;
@@ -1893,7 +1859,6 @@ blockquote cite {
     #archives #archives-tags h3 {
         color: #bcbcbc
     }
-
 
     #archives #archives-tags a {
         position: relative;
@@ -1980,7 +1945,6 @@ blockquote cite {
         background: #f8f8f8;
     }
 
-
     .mark,
     mark {
         padding: .2em;
@@ -2029,7 +1993,6 @@ blockquote cite {
         font-style: italic;
     }
 
-
     .loader {
         -webkit-touch-callout: none;
         -webkit-user-select: none;
@@ -2046,7 +2009,6 @@ blockquote cite {
         -o-transition: opacity 0.5s ease;
         transition: opacity 0.5s ease;
     }
-
 
     .loader-content {
         position: absolute;
@@ -2081,7 +2043,6 @@ blockquote cite {
         background: lightgreen;
         -webkit-animation: load 1s ease infinite;
     }
-
 
     .valine .vlist .vcard .vcomment-body .text-wrapper .vcomment.expand:after {
 
@@ -2151,12 +2112,17 @@ blockquote cite {
         background: #333;
     }
 
-    .v a{
-        color:#EA4C89;
+    .v a {
+        color: #EA4C89;
     }
 
     .info .power a {
         color: white;
+    }
+
+    .song code,
+    .song tt {
+        background-color: #2F2F2F;
     }
 
     .valine .vlist .vcard .vcomment-body .text-wrapper .vcomment p {

@@ -31,7 +31,6 @@
       "name": "valine",
       "label": "是否需要Valine评论",
       "group": "评论板块",
-      "value": true,
       "type": "switch",
       "note": "启动时请确保关闭了gitalk和disqus"
     },
@@ -215,7 +214,6 @@
       "name": "buildTimeLaunch",
       "label": "是否需要开启博客建站时间",
       "group": "建站时间",
-      "value": true,
       "type": "switch",
       "note": "开启则在 footer.js 中运行博客建立时间插件"
     },
@@ -226,6 +224,13 @@
       "value": "05/07/2019",
       "type": "input",
       "note": "请输入博客建立的时间，格式为「月份/日期/年份」"
+    },
+    {
+      "name": "isTop",
+      "label": "是否开启文章置顶显示",
+      "group": "置顶显示",
+      "type": "switch",
+      "note": "开启后在主页面显示文章置顶标识符"
     }
   ]
 }
