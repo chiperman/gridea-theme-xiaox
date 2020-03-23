@@ -2991,7 +2991,7 @@ pre code {
     padding: 3px 8px;
     max-width: 200px;
     border-radius: 0;
-    background-color: #000;
+    background-color: #373737;
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -3010,7 +3010,7 @@ pre code {
     left: 50%;
     margin-left: -5px;
     border-width: 5px 5px 0;
-    border-top-color: #000;
+    border-top-color: #373737;
 }
 
 .tooltip.top-left .tooltip-arrow {
@@ -3018,7 +3018,7 @@ pre code {
     bottom: 0;
     margin-bottom: -5px;
     border-width: 5px 5px 0;
-    border-top-color: #000;
+    border-top-color: #373737;
 }
 
 .tooltip.top-right .tooltip-arrow {
@@ -3026,7 +3026,7 @@ pre code {
     left: 5px;
     margin-bottom: -5px;
     border-width: 5px 5px 0;
-    border-top-color: #000;
+    border-top-color: #373737;
 }
 
 .tooltip.right .tooltip-arrow {
@@ -3034,7 +3034,7 @@ pre code {
     left: 0;
     margin-top: -5px;
     border-width: 5px 5px 5px 0;
-    border-right-color: #000;
+    border-right-color: #373737;
 }
 
 .tooltip.left .tooltip-arrow {
@@ -3042,7 +3042,7 @@ pre code {
     right: 0;
     margin-top: -5px;
     border-width: 5px 0 5px 5px;
-    border-left-color: #000;
+    border-left-color: #373737;
 }
 
 .tooltip.bottom .tooltip-arrow {
@@ -3050,7 +3050,7 @@ pre code {
     left: 50%;
     margin-left: -5px;
     border-width: 0 5px 5px;
-    border-bottom-color: #000;
+    border-bottom-color: #373737;
 }
 
 .tooltip.bottom-left .tooltip-arrow {
@@ -3058,7 +3058,7 @@ pre code {
     right: 5px;
     margin-top: -5px;
     border-width: 0 5px 5px;
-    border-bottom-color: #000;
+    border-bottom-color: #373737;
 }
 
 .tooltip.bottom-right .tooltip-arrow {
@@ -3066,7 +3066,7 @@ pre code {
     left: 5px;
     margin-top: -5px;
     border-width: 0 5px 5px;
-    border-bottom-color: #000;
+    border-bottom-color: #373737;
 }
 
 .clearfix:before,
