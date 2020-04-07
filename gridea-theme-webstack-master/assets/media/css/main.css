@@ -623,7 +623,7 @@ body {
     top: 0;
     bottom: 0;
     width: inherit;
-    overflow: hidden
+    overflow: auto;
 }
 
 .page-body.right-sidebar .sidebar-menu.fixed .sidebar-menu-inner {

@@ -1,5 +1,7 @@
 # gridea-theme-pan-xiaox
 
+![GitHub last commit](https://img.shields.io/github/last-commit/chiperman/gridea-theme-xiaox)
+
 这个 repo 上传了我的 [博客](chiperman.design) 还有 [网址导航](https://chiperman.github.io/webstack/) 所用的主题。
 经过了一部分的魔改，以及新功能的添加
 
