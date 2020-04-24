@@ -3,8 +3,7 @@
   "version": "2.3",
   "author": "文中君",
   "repository": "https://github.com/alterfang/gridea-theme-pan",
-  "customConfig": [
-    {
+  "customConfig": [{
       "name": "indeximg",
       "label": "首页图片",
       "group": "首页",
