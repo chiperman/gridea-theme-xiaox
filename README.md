@@ -32,6 +32,6 @@
 - 配色修改
 - 返回顶部 ⬆、到达底部 ⬇
 
----
+## 👏Thanks
 
 [博客原主题](https://github.com/alterfang/gridea-theme-pan) - 作者：[山卜方](https://novcu.com/) & [网址导航原主题](https://github.com/lmm214/gridea-theme-webstack) - 作者：[林小沐](https://i.immmmm.com/gridea-theme-webstack/)
