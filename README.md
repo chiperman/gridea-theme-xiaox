@@ -2,15 +2,18 @@
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/chiperman/gridea-theme-xiaox)
 
-这个 repo 上传了我的 [博客](chiperman.github.io) 还有 [网址导航](https://chiperman.github.io/webstack/) 所用的主题。
-经过了一部分的魔改，以及新功能的添加
+这个仓库包括了 **Pan** 这个主题的修改版以及**网址导航**所用的主题。
+
+推荐我最新开源的博客主题：🔗 [Porky](https://github.com/chiperman/gridea-theme-porky)。
+
+以上主题都适用于 [Gridea](https://open.gridea.dev)。
 
 ## 🚀 更新
 
 ### 2020 年 3 月 23 日
 
 - 修复自定义配置 switch 选项的显示问题
-- 增加文章主页置顶:top:标识开关 🕹
+- 增加文章主页置顶标识开关 🕹
 
 ### 2020 年 3 月 19 日
 
@@ -20,7 +23,7 @@
 ### 2020 年 3 月 18 日
 
 - 通过使用 Valine💬 显示文章访问量
-- 增加文章主页置顶:top:标识
+- 增加文章主页置顶标识
 - 减少动画
 - 增加底部建站时间 🕘
 
